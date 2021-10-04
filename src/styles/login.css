@@ -1,0 +1,116 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.container-login{
+    background-color: #131921;
+    color: #fff;
+    font-family: 'Roboto';
+    height: 100vh;
+}
+
+    .container-login-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-login-cont img{
+       margin-top: 80%;
+       margin-bottom: 30%;
+    }
+
+    .btn-login-google{
+        background-color: #fff;
+        border: 1px solid #fff;
+        width: 230px;
+        padding: 10px;border-radius: 15px;
+        color: #131921;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .btn-login-google:hover{
+        background-color: #131921;
+        border: 1px solid #fff;
+        width: 230px;
+        padding: 10px;border-radius: 15px;
+        color: #fff;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+        .btn-login-google img{
+            position: relative;
+        }
+
+    .text-login{
+        font-size: 20px;
+        font-family: 'Roboto';
+        font-weight: 400;
+    }
+
+    .container-login-inputs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .input-login{
+            margin-bottom: 20px;
+            border: none;
+            padding: 10px;
+            width: 230px;
+            border-radius: 15px;
+            outline: none;
+            font-family: 'Roboto';
+        }
+
+    .container-login-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .btn-login{
+            background-color: #131921;
+            border: 1px solid #fff;
+            width: 230px;
+            padding: 10px;border-radius: 15px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .text-login{
+            font-size: 14px;
+            font-family: 'Roboto';
+            margin-top: 5px;
+        }
+
+            .text-login a{
+                text-decoration: none;
+                color: #fff;
+            }
+
+    .container-login-btn-register{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 10px;
+    }
+
+        .text-login-register{
+            font-size: 14px;
+            font-family: 'Roboto';
+            margin-bottom: 5px;
+        }
+
+        .btn-login-register{
+            background-color: #131921;
+            border: 1px solid #fff;
+            width: 230px;
+            padding: 10px;border-radius: 15px;
+            color: #fff;
+            cursor: pointer;
+        }

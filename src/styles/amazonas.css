@@ -1,0 +1,210 @@
+/* NavBar */
+* {
+    text-decoration: none;
+}
+
+.container-navbar{
+    background-color: #131921;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Roboto';
+    width: 100%;
+}
+
+    .container-navbar-pin{
+        cursor: pointer;
+    }
+
+        .text-navbar-saludo{
+            font-size: 12px;
+            margin: 8px;
+            margin-left: 24px;
+        }
+
+    .container-navbar-icon{
+        margin-top: -12px;
+        display: flex;
+        align-items: center;
+    }
+
+        .icon-navbar-pin{
+            margin-top: -3px;
+        }
+
+        .text-navbar-dir{
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+    .container-navbar-search{
+        display: flex;
+    }
+
+        .select-navbar-categories{
+            padding: 8px;
+            outline: none;
+            border-radius: 10px 0 0 10px;
+            border: none;
+            background-color: #f3f3f3;
+            font-size: 10px;
+            font-family: 'Roboto';
+        }
+
+        .input-navbar-search{
+            padding: 9px;
+            border: none;
+            font-size: 10px;
+            outline: none;
+            font-family: 'Roboto';
+            width: 22em;
+        }
+
+        .btn-navbar-searc{
+            border: none;
+            border-radius: 0 10px 10px 0;
+            background-color: #f0ad64;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+    .text-navbar-saludo-usr{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+        .text-navbar-saludo-usr span{
+            font-size: 14px;
+            line-height: 22px;
+            cursor: pointer;
+        }
+
+    .text-navbar-devo{
+        font-size: 14px;
+        cursor: pointer;
+        line-height: 22px;
+    }
+
+    .container-navbar-cart{
+        display: flex;
+        cursor: pointer;
+    }
+
+        .text-navbar-cart{
+            font-size: 14px;
+        }
+
+/* Navbar2 */
+
+.container-navbar2{
+    background-color: #242F3E;
+    display: flex;
+    align-items: center;
+}
+
+    .drawel-navbar2{
+        background-color: #242F3E;
+        margin-top: -8px;
+        padding: 30px 15px;
+    }
+
+    .title-navbar2-categorie{
+        font-family: 'Roboto';
+        margin-left: 15px;
+        border-bottom: 1px solid #999;
+        width: 80%;
+        cursor: pointer;
+    }
+
+    .title-navbar2-categorie:hover{
+        border-bottom: 1px solid orangered;
+        color: orangered;
+    }
+
+    .container-navbar2-icon{
+        display: flex;
+        align-items: center;
+        color: #FFF;
+        font-family: 'Roboto';
+        margin-left: 17px;
+        cursor: pointer;
+    }
+
+        /* .icon-navbar2-menu{
+            color: #FFF;
+        } */
+
+        .container-navbar2 p{
+            color: #FFF;
+            margin-left: 17px;
+            margin-right: 20px;
+            cursor: pointer;
+            font-family: 'Roboto';
+        }
+
+
+/* Categorias */
+
+.container-categorias{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+    .container-cat{
+        background-color: #FFF;
+        box-shadow: 7px 7px 10px black;
+        cursor: pointer;
+    }
+
+        .container-cat:hover{
+            background-color: #FFF;
+            -webkit-transform:scale(1.2);
+            -moz-transform:scale(1.2);
+            -ms-transform:scale(1.2);
+            -o-transform:scale(1.2);
+            transform:scale(1.2);
+        }
+
+    .title-cat{
+        text-align: center;
+    }
+
+/* Items */
+
+.containet-products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+}
+    .container-products-container{
+        display: flex;
+        width: 90%;
+        padding: 25px 0;
+        border-bottom: 1px solid #999;
+        cursor: pointer;
+    }
+
+        /* .container-products-img{
+            
+        } */
+
+            .container-products-img img{
+                width: 230px;
+            }
+
+        /* .container-products-details{
+
+        } */
+
+            .title-products{
+                font-family: 'Roboto';
+            }
+
+            .text-products-price{
+                font-family: 'Roboto';
+            }
