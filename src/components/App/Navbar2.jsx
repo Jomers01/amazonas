@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Box, Drawer, List  } from '@mui/material'
 import { Menu } from '@material-ui/icons'
 
-const Navbar2 = ({setCtg}) => {
+const Navbar2 = ({ setCtg }) => {
     const [state, setState] = React.useState({
         left: false
     });
