@@ -1,16 +1,16 @@
 //Dependencias
-import { 
+import {
     BrowserRouter as Router,
     Switch,
     Redirect
- } from "react-router-dom";
- import { useState, useEffect } from "react";
- import { useDispatch } from "react-redux";
- import { onAuthStateChanged, getAuth } from 'firebase/auth'
+} from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { onAuthStateChanged, getAuth } from 'firebase/auth'
 
  //Componentes
 import PublicRouter from "./PublicRouter";
-// import PrivateRouter from "./PrivateRouter";
+import PrivateRouter from "./PrivateRouter";
 import Login from "../components/Login/Login";
 import Register from "../components/Login/Register";
 import Amazonas from "../components/App/Amazonas";
@@ -43,11 +43,11 @@ const AppRouter = () => {
             <Switch>
                 <PublicRouter exact path="/login" component={Login} isAuthenticated={auth} />
                 <PublicRouter exact path="/register" component={Register} isAuthenticated={auth} />
-                <PublicRouter exact path="/" component={Amazonas} isAuthenticated={auth} />
-                <PublicRouter exact path="/vender" component={Vender} isAuthenticated={auth} />
-                <PublicRouter exact path="/details" component={Detalles} isAuthenticated={auth} />
+                <PrivateRouter exact path="/" component={Amazonas} isAuthenticated={auth} />
+                <PrivateRouter exact path="/vender" component={Vender} isAuthenticated={auth} />
+                <PrivateRouter exact path="/details" component={Detalles} isAuthenticated={auth} />
 
-                <Redirect to="/" />
+                <Redirect to="/login" />
             </Switch>
         </Router>
     )

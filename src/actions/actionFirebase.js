@@ -28,7 +28,8 @@ export const firebasePost = (coleccion, data, history) => {
       data.image.length > 4 &&
       data.description.length > 4
     ) {
-      await addDoc(collection(db, coleccion), data).then((resp) => {
+      await addDoc(collection(db, coleccion), data)
+      .then((resp) => {
         dispatch(typePOST(data));
         Swal.fire({
           icon: "success",
@@ -40,7 +41,8 @@ export const firebasePost = (coleccion, data, history) => {
           cancelButtonColor: "#00F",
         }).then(async (result) => {
           if (result.isConfirmed) {
-            await dispatch(firebaseGet("productos")).then((resp) => {
+            await dispatch(firebaseGet("productos"))
+            .then((resp) => {
               history.push("/");
             });
           } else {

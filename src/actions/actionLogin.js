@@ -16,11 +16,11 @@ export const loginGoogle = () => {
           title: `Bienvenido ${user.displayName}`,
           showConfirmButton: false,
           timer: 1500,
-        });
+        })
       })
       .catch((error) => console.log(error));
-  };
-};
+  }
+}
 
 export const loginSincronoGoogle = (email, displayName) => {
   return {
@@ -29,17 +29,17 @@ export const loginSincronoGoogle = (email, displayName) => {
       email,
       displayName,
     },
-  };
-};
+  }
+}
 
 export const startLogout = () => {
   return async (dispatch) => {
     const auth = getAuth();
     await signOut(auth);
     dispatch(logout());
-  };
-};
+  }
+}
 
 export const logout = () => ({
   type: typesLogin.logout,
-});
+})
